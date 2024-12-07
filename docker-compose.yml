@@ -9,7 +9,7 @@ services:
         FTP_PASS: ${FTP_PASS}
     ports:
       - "21:21"
-      - "10000-10100:10000-10100"
+      - "20000-20100:20000-20100"
     volumes:
       - "./data:/opt/PROD"
     restart: always

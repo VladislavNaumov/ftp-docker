@@ -23,6 +23,6 @@ RUN mkdir -p /opt/PROD && \
 COPY ./vsftpd.conf /etc/vsftpd.conf
 
 EXPOSE 21
-EXPOSE 10000-10100
+EXPOSE 20000-20100
 
 CMD ["vsftpd", "/etc/vsftpd.conf"]
