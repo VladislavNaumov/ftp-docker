@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  ftp:
+    build:
+      context: .
+      args:
+        FTP_USER: ${FTP_USER}
+        FTP_PASS: ${FTP_PASS}
+    ports:
+      - "21:21"
+      - "10000-10100:10000-10100"
+    volumes:
+      - "./data:/opt/PROD"
+    restart: always
+    mem_limit: 1024m
+    cpus: '0.5'  
